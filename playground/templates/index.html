@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Spotify</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="menu">
+                <a class="active" href="#"><span><img src= "{% static 'img/home.svg' %}" alt=""></span>Inicio</a>
+                <a href="#"><span><img src="{% static 'img/search.svg' %}"  alt=""></span>Buscar</a>
+                <a href="#"><span><img src="{% static 'img/library.svg' %}"  alt=""></span>Tu biblioteca</a> <br>
+                <a href="#"><span><img src="{% static 'img/add.svg' %}"  alt=""></span>Crear lista</a>
+                <a href="#"><span><img src="{% static 'img/heart.svg' %}"  alt=""></span>Canciones que te gustan</a>
+            </div>
+            </nav>
+        </aside>
+        <section>
+            <header>
+                <div class="botones_prev_next">
+                    <span class="btn_prev"><img src="{% static 'img/prev.svg' %}" alt=""></span>
+                    <span class="btn_next"><img src="{% static 'img/next.svg' %}" alt=""></span>
+                </div>
+
+                <div class="suscribcion">
+                    <div class="mejora_cuenta">
+                        <button>MEJORAR TU CUENTA</button>
+                    </div>
+                    <div class="perfil">
+                        <span class="circulo"><img src="{% static 'img/user.svg' %}" alt=""></span>
+                        <span class="nombre">Usuario</span>
+                        <span><img src="{% static 'img/salir.svg' %}" alt=""></span>
+                    </div>
+                </div>
+            </header>
+            <div class="contenedor_degradado">
+                <div class="banner">
+                    <div class="cancion">
+                        <figure>
+                            <img src="{% static 'img/person_01.png' %}" alt="">
+                        </figure>
+                    </div>
+                    <div class="cancion">
+                        <figure>
+                            <img src="{% static 'img/person_02.png' %}" alt="">
+                        </figure>
+                    </div>
+                    <div class="cancion">
+                        <figure>
+                            <img src="{% static 'img/person_03.png' %}" alt="">
+                        </figure>
+                    </div>
+                    <div class="cancion">
+                        <figure>
+                            <img src="{% static 'img/person_04.png' %}" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor_contenido">
+                <div class="titulos">
+                    <h1>¡Buenos días!</h1>
+                </div>
+                <div class="generos">
+                    <div class="cards">
+                        <div class="card_imagen"><img src=" {% static 'img/person_01.png' %} " alt=""></div>
+                        <div class="card_text">
+                            <h4>Autor primero</h4>
+                            <img src=" {% static 'img/play.svg' %} " alt="">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card_imagen"><img src="{% static 'img/person_02.png' %}" alt=""></div>
+                        <div class="card_text">
+                            <h4>Autor primero</h4>
+                            <img src="{% static 'img/play.svg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card_imagen"><img src="{% static 'img/person_03.png' %}  " alt=""></div>
+                        <div class="card_text">
+                            <h4>Autor primero</h4>
+                            <img src="{% static 'img/play.svg' %}  " alt="">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card_imagen"><img src="{% static 'img/person_04.png' %}  " alt=""></div>
+                        <div class="card_text">
+                            <h4>Autor primero</h4>
+                            <img src=" {% static 'img/play.svg' %}  " alt="">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card_imagen"><img src="{% static 'img/person_01.png' %} " alt=""></div>
+                        <div class="card_text">
+                            <h4>Autor primero</h4>
+                            <img src="{% static 'img/play.svg' %}  " alt="">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card_imagen"><img src="{% static 'img/person_02.png' %} " alt=""></div>
+                        <div class="card_text">
+                            <h4>Autor primero</h4>
+                            <img src="{% static 'img/play.svg' %} " alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="titulos">
+                    <h2>Programas para probar</h2>
+                    <span>Podcast que pensamos que te van a enganchar</span>
+                </div>
+
+                <div class="podcast">
+                    <div class="card_podcast">
+                        <img src="{% static 'img/person_01.png' %}  " alt="">
+                        <h4>Titulo</h4>
+                        <p>Podcast primero</p>
+                    </div>
+                    <div class="card_podcast">
+                        <img src="{% static 'img/person_02.png' %}  " alt="">
+                        <h4>Titulo</h4>
+                        <p>Podcast primero</p>
+                    </div>
+                    <div class="card_podcast">
+                        <img src="{% static ' img/person_03.png' %} " alt="">
+                        <h4>Titulo</h4>
+                        <p>Podcast primero</p>
+                    </div>
+                    <div class="card_podcast">
+                        <img src="{% static 'img/person_04.png' %} " alt="">
+                        <h4>Titulo</h4>
+                        <p>Podcast primero</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="controles">
+                <img src="{% static 'img/prev_footer.svg ' %}  " alt="">
+                <img src="{% static 'img/play_footer.svg ' %} " alt="">
+                <img src="{% static 'img/next_footer.svg ' %} " alt="">
+            </div>
+            <div class="progreso">
+                <span>0:00</span>
+                <div class="barra_progreso"></div>
+                <span>5:00</span>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

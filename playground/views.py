@@ -18,7 +18,7 @@ def friend(request):
     return render(request, "hello.html", {"name": "PAGINA", "sport" : "FRIEND"})
 
 def spo(request):
-    return render(request, "clin_spotify/index.html")
+    return render(request, "index.html")
 
 
 
