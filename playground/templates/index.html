@@ -31,84 +31,61 @@
                 </div>
 
                 <div class="suscribcion">
-                    <div class="mejora_cuenta">
-                        <button>MEJORAR TU CUENTA</button>
-                    </div>
+                   
                     <div class="perfil">
                         <span class="circulo"><img src="{% static 'img/user.svg' %}" alt=""></span>
-                        <span class="nombre">Usuario</span>
+                        
                         <span><img src="{% static 'img/salir.svg' %}" alt=""></span>
                     </div>
                 </div>
             </header>
             <div class="contenedor_degradado">
-                <div class="banner">
-                    <div class="cancion">
-                        <figure>
-                            <img src="{% static 'img/person_01.png' %}" alt="">
-                        </figure>
-                    </div>
-                    <div class="cancion">
-                        <figure>
-                            <img src="{% static 'img/person_02.png' %}" alt="">
-                        </figure>
-                    </div>
-                    <div class="cancion">
-                        <figure>
-                            <img src="{% static 'img/person_03.png' %}" alt="">
-                        </figure>
-                    </div>
-                    <div class="cancion">
-                        <figure>
-                            <img src="{% static 'img/person_04.png' %}" alt="">
-                        </figure>
-                    </div>
-                </div>
+              
             </div>
             <div class="contenedor_contenido">
                 <div class="titulos">
                     <h1>{{name.nombre}}</h1>
                 </div>
                 <div class="generos">
-                    <div class="cards">
-                        <div class="card_imagen"><img src=" {% static 'img/person_01.png' %} " alt=""></div>
-                        <div class="card_text">
-                            <h4>Autor primero</h4>
+                    <div class="cards" onclick="window.open('http://127.0.0.1:8000/playground/sumar/id=1/','mywindow')" >
+                        <div class="card_imagen"><img src="{% static 'img/heart.svg' %} " alt=""></div>
+                        <div  class="card_text">
+                            <h4>Ferxxo 100 </h4>
                             <img src=" {% static 'img/play.svg' %} " alt="">
                         </div>
                     </div>
-                    <div class="cards">
-                        <div class="card_imagen"><img src="{% static 'img/person_02.png' %}" alt=""></div>
+                    <div class="cards" onclick="window.open('http://127.0.0.1:8000/playground/sumar/id=2/','mywindow')">
+                        <div class="card_imagen"><img src="{% static 'img/heart.svg' %}" alt=""></div>
                         <div class="card_text">
-                            <h4>Autor primero</h4>
+                            <h4>Normal</h4>
                             <img src="{% static 'img/play.svg' %}" alt="">
                         </div>
                     </div>
-                    <div class="cards">
-                        <div class="card_imagen"><img src="{% static 'img/person_03.png' %}  " alt=""></div>
+                    <div class="cards" onclick="window.open('http://127.0.0.1:8000/playground/sumar/id=3/','mywindow')">
+                        <div class="card_imagen"><img src="{% static 'img/heart.svg' %} " alt=""></div>
                         <div class="card_text">
-                            <h4>Autor primero</h4>
+                            <h4>Monastery</h4>
                             <img src="{% static 'img/play.svg' %}  " alt="">
                         </div>
                     </div>
-                    <div class="cards">
-                        <div class="card_imagen"><img src="{% static 'img/person_04.png' %}  " alt=""></div>
+                    <div class="cards" onclick="window.open('http://127.0.0.1:8000/playground/sumar/id=4/','mywindow')">
+                        <div class="card_imagen"><img src="{% static 'img/heart.svg' %}  " alt=""></div>
                         <div class="card_text">
-                            <h4>Autor primero</h4>
+                            <h4>Instagram</h4>
                             <img src=" {% static 'img/play.svg' %}  " alt="">
                         </div>
                     </div>
-                    <div class="cards">
-                        <div class="card_imagen"><img src="{% static 'img/person_01.png' %} " alt=""></div>
+                    <div class="cards" onclick="window.open('http://127.0.0.1:8000/playground/sumar/id=5/','mywindow')">
+                        <div class="card_imagen"><img src="{% static 'img/heart.svg' %} " alt=""></div>
                         <div class="card_text">
-                            <h4>{{name.nombre}}</h4>
+                            <h4>Cairo</h4>
                             <img src="{% static 'img/play.svg' %}  " alt="">
                         </div>
                     </div>
-                    <div class="cards">
-                        <div class="card_imagen"><img src="{% static 'img/person_02.png' %} " alt=""></div>
+                    <div class="cards" onclick="window.open('http://127.0.0.1:8000/playground/sumar/id=6/','mywindow')">
+                        <div class="card_imagen"><img src="{% static 'img/heart.svg' %}" alt=""></div>
                         <div class="card_text">
-                            <h4>Autor primero</h4>
+                            <h4>Me Provocas</h4>
                             <img src="{% static 'img/play.svg' %} " alt="">
                         </div>
                     </div>
@@ -120,25 +97,15 @@
 
                 <div class="podcast">
                     <div class="card_podcast">
-                        <img src="{% static 'img/person_01.png' %}  " alt="">
-                        <h4>Titulo</h4>
-                        <p>Podcast primero</p>
+                        <img src="{% static 'img/heart.svg' %}  " alt="">
+                        <h4>{{nombreCancion}}</h4>
+                        <p>{{playsCancion}}</p>                       
+                         <a style="color: white" href="" onclick="window.location.reload(true);"> Play </a>
+
+                         <br>
+                        <a style="color: white" onclick="window.open('{{link}}')"> GO YOUTUBE </a>
                     </div>
-                    <div class="card_podcast">
-                        <img src="{% static 'img/person_02.png' %}  " alt="">
-                        <h4>Titulo</h4>
-                        <p>Podcast primero</p>
-                    </div>
-                    <div class="card_podcast">
-                        <img src="{% static ' img/person_03.png' %} " alt="">
-                        <h4>Titulo</h4>
-                        <p>Podcast primero</p>
-                    </div>
-                    <div class="card_podcast">
-                        <img src="{% static 'img/person_04.png' %} " alt="">
-                        <h4>Titulo</h4>
-                        <p>Podcast primero</p>
-                    </div>
+                 
                 </div>
             </div>
         </section>
