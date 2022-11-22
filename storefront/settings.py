@@ -11,11 +11,10 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 import django_heroku
-
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) 
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,7 +26,7 @@ SECRET_KEY = 'django-insecure-c)mkicq5$mqv0hbo1%grun3aw7w)2j%0-48se%i@wpfd@84)%)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['labsoft2022.herokuapp.com']
 
 INTERNAL_IPS = [
     # ...
@@ -56,7 +55,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
     
 ]
 
@@ -133,7 +131,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-STATIC_URL='/static/'
+STATIC_URL='playground/static/'
 django_heroku.settings(locals())
 
 # Default primary key field type
