@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
-import django_heroku
+import django_on_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -84,13 +84,14 @@ WSGI_APPLICATION = 'storefront.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dfeo614f43fbkn',
-        'USER': 'bpmtdipxkjyauu',
-        'PASSWORD': '37fa1d4d06169006aca10765e8fdb91a4379575883f1fd16ac86cce57fdcf09a',
-        'HOST': 'ec2-3-219-135-162.compute-1.amazonaws.com',
+        'NAME': 'labase',
+        'USER': 'postgres',
+        'PASSWORD': 'Andresdavid25',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
@@ -132,7 +133,7 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL='playground/static/'
-django_heroku.settings(locals())
+django_on_heroku.settings(locals())
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
