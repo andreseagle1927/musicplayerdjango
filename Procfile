@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn labsoft2022.wsgi --log-file=-    
+web: gunicorn storefront.wsgi --log-file=-    
